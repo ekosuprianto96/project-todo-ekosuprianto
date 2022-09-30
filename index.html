@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1 draggable="true">Applikasi Daftar Buku</h1>
+                </div>
+                <form action="" class="form-cari">
+                    <input type="search" id="input-cari" placeholder="Search..">
+                    <!-- <button type="submit" id="search">Search</button> -->
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="content-wrapper">
+                <aside class="sidebar-left">
+                    <nav class="menu">
+                        <a href="#" id="list-books" draggable="true"><i class="bi bi-journal-bookmark-fill"></i> List of Books</a>
+                        <a href="#" id="btn-add"><i class="bi bi-file-earmark-plus-fill"></i> Add Books</a>
+                        <a href="#" id="unread-book"><i class="bi bi-journal-x"></i> Unread</a>
+                        <a href="#" id="already-read"><i class="bi bi-journal-check"></i> Already read</a>
+                    </nav>
+                </aside>
+                <section class="view" id="view">
+            
+                    <h1>Daftar Semua Buku</h1>
+
+                    <div class="content-books"></div>
+            
+                </section>
+                <div class="tambah-buku">
+                    <form action="" class="form-tambah">
+                        <div class="input">
+                            <label for="judul-buku">Book Title</label>
+                            <input type="text" name="judul-buku" id="title-books" required>
+                        </div>
+                        <div class="input">
+                            <label for="penulis">Writer</label>
+                            <input type="text" name="penulis" id="writer" required>
+                        </div>
+                        <div class="input">
+                            <label for="tahun">Year</label>
+                            <input type="date" name="tahun" id="year" required>
+                        </div>
+                        <div class="input-check">
+                            <label for="info">Already Read</label>
+                            <input type="checkbox" name="info" id="info">
+                            <p class="pesan" style="color: red;font-weight: bold;font-size: 18px;">Please Fill in the Form First!
+                            </p>
+                        </div>
+                        <div class="input btn">
+                            <button type="submit" id="save">Save</button>
+                            <button type="button" id="cancel">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="text-footer">
+                <span>&copy;Copy Right <a href="ekhosaputra23@gmail.com" style="margin-left: 7px;text-decoration: none;color: white;">Eko Suprianto</a> <strong style="margin-left: 7px;">2022</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
